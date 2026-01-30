@@ -1,4 +1,4 @@
-# corp-bool™ Landing (working)
+# corp-bool™ Landing
 
 This repo is a **working** fancy corporate landing page for corp-bool.
 
