@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body { height: 100%; }
+body { @apply bg-ink text-white font-sans; }
+
+::selection { background: rgba(255,255,255,.14); }
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+  background-size: 42px 42px;
+  background-position: 0 0, 0 0;
+}
+
+.glow {
+  background:
+    radial-gradient(800px 260px at 20% 0%, rgba(124,58,237,.28), transparent 60%),
+    radial-gradient(640px 220px at 80% 10%, rgba(59,130,246,.26), transparent 55%),
+    radial-gradient(520px 240px at 55% 55%, rgba(16,185,129,.14), transparent 55%);
+}
+
+.card {
+  @apply rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-xl shadow-soft;
+}
